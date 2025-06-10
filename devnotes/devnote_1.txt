@@ -1,0 +1,30 @@
+Developer Doc
+1.	Overview
+ The music mixer will be about the game Valorant, specifically the gun sound effect in the game. There are many kinds of guns, and they all make different sounds with different variants of cosmetics that you can buy. With that in mind, we are planning to make a music mixer cultivating from the sound effects of a gun with the variants of its cosmetics.
+2.	Key features
+The website will allow the user to:
+•	See the information of the gun as part of the hero on the website.
+•	The cosmetics on a row to indicate drag and drop.
+•	When drag and drop, different sound effects will be played.
+•	When dragging all the different cosmetics, they will lead to a sound effect of an ACE (which is the sound effect achieved when you kill all the enemy team)
+3.	Architecture
+a.	UI
+•	The UI will have a row of the cosmetics on the left of the screen, showing all the variants of the gun.
+•	On the right will be a design with the place holder for the drag and drop, with an explanation of how to play.
+•	When user reach a certain point while playing the drag and drop, there will be a special sound effect and notice on screen to indicate their process.
+b.	Drag and Drop Logic
+•	The cosmetics of the gun will be on the left, and there will be the place holder (like a throne of sort) to the right and in the middle of the screen.
+•	The user will the pick the cosmetic, drag and drop into the place holder.
+•	The cosmetics when dropped will make the sound of when you kill an enemy, until the sound keep stacking, showing how many enemies you have killed.
+•	When the sound effect reaches the fifth one, the special effect of “ACE” will show.
+c.	Audio Processing
+•	We’re planning to source the sound effect on YouTube, processing the sounds effect through a program for the best quality possible.
+•	We will then, mark each sound and the logic leading up to the “ACE” screen.
+d.	Event handling
+•	There will mostly be the event of mouse click and mouse over for when the user clicks and hovers over the cosmetics.
+•	We will figure out a way to incorporate the event of keyboard (arrow keys) up and down to choose the cosmetics.
+4.	Resources
+•	We found some good quality sound effect for the cosmetics on Youtube: https://www.youtube.com/watch?v=lTCRd_4FCvU
+•	We will also use the main Valorant website for the color scheme and main style: https://playvalorant.com/en-us/platform-selection/?gclsrc=aw.ds&gad_source=1&gad_campaignid=21357999490&gclid=Cj0KCQjwjJrCBhCXARIsAI5x66UU0ka6I943Wr-9pTh3kXjgBqaUEaMnGc7h6z_KiW9NPRP1lAhSk1oaAjOEEALw_wcB
+ 
+
