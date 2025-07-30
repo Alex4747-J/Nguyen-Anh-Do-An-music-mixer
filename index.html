@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Valorant's Gun Skin Mixer</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
 </head>
+
 <body>
+    <header class="main-header grid-con">
+        <h1 class="hidden">Valorant's Gun Skin Main Page</h1>
+        <a href="#" class="l-col-start-1 l-col-end-4 header-logo">
+            <img src="images/logo_valo.png" alt="Valorant Logo">
+        </a>
+        <nav class="main-nav l-col-start-6 l-col-end-13">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skin's Detail</a></li>
+                <li><a href="#">How to Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="grid-con">
+            <div class="hero-des l-col-span-full">
+                <h2 class="l-col-start-1 l-col-end-13">What is Valorant?</h2>
+                <p class="l-col-span-full">Welcome to Valorant, a free-to-play, 5v5 tactical first-person shooter where sharp gunplay meets powerful character abilities. You'll play as an "Agent," each equipped with a unique set of skills designed for strategic advantage. In the main game mode, one team attacks by trying to plant a bomb called the Spike, while the other team defends. Success demands more than just aim; it requires teamwork, clever use of your abilities, and sharp strategy to outplay your opponents. Choose your Agent, coordinate with your team, and fight to win 13 rounds to claim victory.</p>
+            </div>
+        </section>
+
+        <section class="grid-con">
+            <h2 class="hidden">Gun's Mixer Section</h2>
+            <div class="l-col-span-full mixer-container">
+                <div class="grid-con instruction">
+                    <h3 class="l-col-span-full">How to use the Gun Mixer</h3>
+                    <p class="l-col-span-full">Step 1: Choose the skins that you like. <br> 
+                    Step 2: Click and drag the skin on to the drop box to load and play the sound. <br>
+                    Step 3: Use the main controls to Play, Pause, or Reset all sounds. <br>
+                    Step 4: Change the volume as needed. <br>
+                    Step 5: Enjoy the gun sounds!
+                    </p>
+                </div>
+                
+                {/* */}
+                <div id="audio-players" class="hidden">
+                    <audio data-trackref="phantom_bolt" src="Audio/phantom_bolt.mp3"></audio>
+                    <audio data-trackref="phantom_champion_2022" src="Audio/phantom_champion_2022.mp3"></audio>
+                    <audio data-trackref="phantom_mystbloom" src="Audio/phantom_mystbloom.mp3"></audio>
+                    <audio data-trackref="phantom_nocturne" src="Audio/phantom_nocturne.mp3"></audio>
+                    <audio data-trackref="phantom_singularity" src="Audio/phantom_singularity.mp3"></audio>
+                    <audio data-trackref="phantom_spectrum" src="Audio/phantom_spectrum.mp3"></audio>
+                    <audio data-trackref="vandal_araxys" src="Audio/vandal_araxys.mp3"></audio>
+                    <audio data-trackref="vandal_champion_2021" src="Audio/vandal_champion_2021.mp3"></audio>
+                    <audio data-trackref="vandal_evori" src="Audio/vandal_evori.mp3"></audio>
+                    <audio data-trackref="vandal_exo" src="Audio/vandal_exo.mp3"></audio>
+                </div>
+
+                <div class="grid-con" id="sound-library">
+                    <h3 class="l-col-span-full">Sound Library</h3>
+                    <div class="sound-clip l-col-start-2 l-col-span-2" draggable="true" data-trackref="phantom_bolt">
+                        <img src="images/phantom_bolt.svg" alt="Phantom Bolt">
+                        <p>Phantom Bolt</p>
+                    </div>
+                    <div class="sound-clip l-col-span-2" draggable="true" data-trackref="phantom_champion_2022">
+                        <img src="images/phantom_champion_2022.svg" alt="Phantom Champion 2022">
+                        <p>Phantom Champion 2022</p>
+                    </div>
+                    <div class="sound-clip l-col-span-2" draggable="true" data-trackref="phantom_mystbloom">
+                        <img src="images/phantom_mystbloom.svg" alt="Phantom Myst Bloom">
+                        <p>Phantom Myst Bloom</p>
+                    </div>
+                    <div class="sound-clip l-col-span-2" draggable="true" data-trackref="phantom_nocturne">
+                        <img src="images/phantom_nocturne.svg" alt="Phantom Nocturne">
+                        <p>Phantom Nocturne</p>
+                    </div>
+                    <div class="sound-clip l-col-span-2" draggable="true" data-trackref="phantom_spectrum">
+                        <img src="images/phantom_spectrum.svg" alt="Phantom Spectrum">
+                        <p>Phantom Spectrum</p>
+                    </div>
+                    <div class="sound-clip l-col-start-2 l-col-span-2" draggable="true" data-trackref="vandal_araxys">
+                        <img src="images/vandal_araxys.svg" alt="Vandal Araxys">
+                        <p>Vandal Araxys</p>
+                    </div>
+                    <div class="sound-clip l-col-span-2" draggable="true" data-trackref="vandal_champion_2021">
+                        <img src="images/vandal_champion_2021.svg" alt="Vandal Bolt">
+                        <p>Vandal Champion 2021</p>
+                    </div>
+                    <div class="sound-clip l-col-span-2" draggable="true" data-trackref="vandal_evori">
+                        <img src="images/vandal_evori.svg" alt="Vandal Evori">
+                        <p>Vandal Evori</p>
+                    </div>
+                    <div class="sound-clip l-col-span-2" draggable="true" data-trackref="vandal_exo">
+                        <img src="images/vandal_exo.svg" alt="Vandal Exo">
+                        <p>Vandal Exo</p>
+                    </div>
+                    <div class="sound-clip l-col-span-2 " draggable="true" data-trackref="vandal_kuronami">
+                        <img src="images/vandal_kuronami.svg" alt="Vandal Kuronami">
+                        <p>Vandal Kuronami</p>
+                    </div>
+                </div>
+            
+                <div class="mixer-box-wrapper grid-con">
+                    <h3 class="col-span-full">Mixer</h3>
+                    
+                    <div class="drop-zone l-col-span-3"></div>
+                    <div class="drop-zone l-col-span-3"></div>
+                    <div class="drop-zone l-col-span-3"></div>
+                    <div class="drop-zone l-col-span-3"></div>
+                </div>
+            </div>
+        </section>
     
+        <section class="grid-con">
+            <h2 class="hidden">Main Control</h2>
+            <div class="controls l-col-span-full">
+                <button id="playBtn" class="control-btn"> <svg width="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> <polygon points="25,15 85,50 25,85" fill="#d5f46b" stroke="#7242d6" stroke-width="10" stroke-linejoin="round" /></svg></button>
+                <button id="pauseBtn" class="control-btn"><svg width="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g stroke="#7242d6" stroke-width="10" fill="#d5f46b" stroke-linejoin="round"><rect x="25" y="15" width="20" height="70" rx="5" /><rect x="55" y="15" width="20" height="70" rx="5" /></g></svg></button>
+                <button id="resetBtn" class="control-btn"><svg width="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g><path d="M 85,50 A 35,35 0 1 1 75,16" fill="none" stroke="#d5f46b" stroke-width="10" stroke-linecap="round" /><polygon points="75,0 98,16 75,33" fill="#d5f46b" stroke="#7242d6" stroke-width="8" stroke-linejoin="round" /></g></svg></button>
+            </div>
+            <div class="volume-control l-col-start-5 l-col-span-3">
+                <label for="volume-slider">🔊</label>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
